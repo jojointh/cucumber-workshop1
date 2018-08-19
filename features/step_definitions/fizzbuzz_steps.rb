@@ -1,35 +1,15 @@
 class Fizzbuzz
+    def modWithFifteen()
+    end
     def count(input)
-        if input == 1 then
-            "1"
-        elsif input == 2 then
-            "2"
-        elsif input == 3 then
-            "Fizz"
-        elsif input == 4 then
-            "4"
-        elsif input == 5 then
-            "Buzz"
-        elsif input == 6 then
-            "Fizz"
-        elsif input == 7 then
-            "7"
-        elsif input == 8 then
-            "8"
-        elsif input == 9 then
-            "Fizz"
-        elsif input == 10 then
-            "Buzz"
-        elsif input == 11 then
-            "11"    
-        elsif input == 12 then
-            "Fizz"    
-        elsif input == 13 then
-            "13"    
-        elsif input == 14 then
-            "14"    
-        else
+        if input % 15 == 0 then
             "FizzBuzz"
+        elsif input % 3 == 0 then
+            "Fizz"
+        elsif input % 5 == 0 then
+            "Buzz"
+        else
+            input.to_s
         end
     end
 end
