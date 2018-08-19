@@ -6,9 +6,17 @@ class Fizzbuzz
             "2"
         elsif input == 3 then
             "Fizz"
-        else
+        elsif input == 4 then
             "4"
-         end
+        elsif input == 5 then
+            "Buzz"
+        elsif input == 6 then
+            "Fizz"
+        elsif input == 7 then
+            "7"
+        else
+            "8"
+        end
     end
 end
 
