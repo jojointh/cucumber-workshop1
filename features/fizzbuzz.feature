@@ -1,75 +1,45 @@
 Feature: Fizzbuss counting system
-    Scenario: 1 is 1
-        Given I got 1
-        When I count
-        Then I should got "1"
 
-    Scenario: 2 is 2
-        Given I got 2
-        When I count 
-        Then I should got "2"
-
-    Scenario: 4 is 4
-        Given I got 4
+    Scenario Outline: ตัวเลขที่หาร 3 ลงตัว
+        Given I got <input>
         When I count
-        Then I should got "4"
+        Then I should got <expected>
 
-    Scenario: 7 is 7
-        Given I got 7
-        When I count
-        Then I should got "7"
+        Examples: 
+        |input|expected|
+        |3|"Fizz"| 
+        |6|"Fizz"|
+        |9|"Fizz"|
+        |12|"Fizz"|
 
-    Scenario: 8 is 8
-        Given I got 8
+     Scenario Outline: ตัวเลขที่หาร 5 ลงตัว
+        Given I got <input>
         When I count
-        Then I should got "8"
+        Then I should got <expected>
+        Examples: 
+        |input|expected|
+        |5|"Buzz"| 
+        |10|"Buzz"|
+
+     Scenario Outline: ตัวเลขที่หาร 15 ลงตัว
+        Given I got <input>
+        When I count
+        Then I should got <expected>
+        Examples: 
+        |input|expected|
+        |15|"FizzBuzz"| 
     
-    Scenario: 11 is "11"
-        Given I got 11
+     Scenario Outline: ตัวเลขที่หาร 3 และ 5 ไม่ลงตัว
+        Given I got <input>
         When I count
-        Then I should got "11"
-
-    Scenario: 13 is "13"
-        Given I got 13
-        When I count
-        Then I should got "13"
-
-    Scenario: 14 is "14"
-        Given I got 14
-        When I count
-        Then I should got "14"
-    
-    Scenario: 3 is "Fizz"
-        Given I got 3
-        When I count
-        Then I should got "Fizz"
-
-    Scenario: 6 is "Fizz"
-        Given I got 6
-        When I count
-        Then I should got "Fizz"
-
-    Scenario: 9 is "Fizz"
-        Given I got 9
-        When I count
-        Then I should got "Fizz"
-    
-    Scenario: 12 is "Fizz"
-        Given I got 12
-        When I count
-        Then I should got "Fizz"
-
-    Scenario: 5 is "Buzz"
-        Given I got 5
-        When I count
-        Then I should got "Buzz"
-
-    Scenario: 10 is "Buzz"
-        Given I got 10
-        When I count
-        Then I should got "Buzz"
-
-    Scenario: 15 is "15"
-        Given I got 15
-        When I count
-        Then I should got "FizzBuzz"
+        Then I should got <expected>
+        Examples: 
+        |input|expected|
+        |1|"1"|
+        |2|"2"|
+        |4|"4"|
+        |7|"7"|
+        |8|"8"|
+        |11|"11"|
+        |13|"13"|
+        |14|"14"|
