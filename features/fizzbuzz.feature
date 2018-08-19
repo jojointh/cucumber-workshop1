@@ -63,3 +63,13 @@ Feature: Fizzbuss counting system
         Given I got 13
         When I count
         Then I should got "13"
+
+    Scenario: 14 is "14"
+        Given I got 14
+        When I count
+        Then I should got "14"
+
+    Scenario: 15 is "15"
+        Given I got 15
+        When I count
+        Then I should got "FizzBuzz"
