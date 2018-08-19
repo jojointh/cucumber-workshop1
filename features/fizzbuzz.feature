@@ -58,3 +58,8 @@ Feature: Fizzbuss counting system
         Given I got 12
         When I count
         Then I should got "Fizz"
+
+    Scenario: 13 is "13"
+        Given I got 13
+        When I count
+        Then I should got "13"
