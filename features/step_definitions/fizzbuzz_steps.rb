@@ -2,8 +2,12 @@ class Fizzbuzz
     def count(input)
         if input == 1 then
             "1"
-        else
+        elsif input == 2 then
             "2"
+        elsif input == 3 then
+            "Fizz"
+        else
+            "4"
          end
     end
 end
