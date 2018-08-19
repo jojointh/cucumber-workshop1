@@ -38,3 +38,23 @@ Feature: Fizzbuss counting system
         Given I got 8
         When I count
         Then I should got "8"
+
+    Scenario: 9 is "Fizz"
+        Given I got 9
+        When I count
+        Then I should got "Fizz"
+
+    Scenario: 10 is "Buzz"
+        Given I got 10
+        When I count
+        Then I should got "Buzz"
+    
+    Scenario: 11 is "11"
+        Given I got 11
+        When I count
+        Then I should got "11"
+    
+    Scenario: 12 is "Fizz"
+        Given I got 12
+        When I count
+        Then I should got "Fizz"
