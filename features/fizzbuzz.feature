@@ -4,6 +4,10 @@ Feature: Fizzbuss counting system
     When I count
     Then I should got "1"
 
+    Scenario: 2 is 2
+    Given I got 2
+    When I count 
+    Then I should got "2"
     
 
 
